@@ -1,0 +1,68 @@
+script.js
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1rem;
+}
+
+#hero {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+#about,
+#portfolio,
+#contact {
+    padding: 3rem 0;
+    background-color: #000;
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Add more styles as needed for your portfolio items and contact form */
+/* ... (previous styles) */
+
+/* Add animation styles */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Trigger the animation when the element comes into view */
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
