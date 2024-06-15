@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Bartosz Kutnik</title>
+    <title>Amitpatle</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/scrollbutton.css">
     <link rel="stylesheet" href="assets/css/nav.css">
@@ -20,284 +20,274 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-        <div class="scrollTop" onclick="scrollTopTop()">
-            <i class="fa-solid fa-arrow-up"></i>
-        </div>
-        <header id="parallaxHeader">
-            <div class="container">
-                <nav>
-                    <img src="assets/images/logo/logo.png" class="logo" alt="Logo Kutnik">
-                    <ul id="sidemenu">
-                        <li onclick="closemenu()"><a href="#header">Home</a></li>
-                        <li onclick="closemenu()"><a href="#about">O mnie</a></li>
-                        <li onclick="closemenu()"><a href="#skills">Umiejętności</a></li>
-                        <li onclick="closemenu()"><a href="#portfolio">Portfolio</a></li>
-                        <li onclick="closemenu()"><a href="#contact">Kontakt</a></li>
-                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                    </ul>
-                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                    <div class="icon-container">
-                        <i class="fas fa-globe"></i>
-                        <div class="dropdown-content">
-                            <a href="index.html"><img src="assets/images/langicons/poland.png"><p>Polski</p></a>
-                            <a href="enindex.html"><img src="assets/images/langicons/united-kingdom.png"><p>English</p></a>
-                        </div>
-                    </div>
-                   
-                </nav>
-                <div class="header-text">
-                    <div
-                    data-aos="fade"
-                    data-aos-duration="2500"
-                    data-aos-easing="ease-in-out-back"
-                  ><p>Junior Developer</p>
-                  </div>
-                    <div data-aos="fade-up" data-aos-duration="1500"><h1>Cześć, Jestem<br><span>Bartek</span></h1></div>
-                </div>
-            </div>
-        </header>
-        <!------------about------------->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="800" data-aos-easing="ease-in-sine"><img class="imgabout" src="assets/images/userimg/user.png" alt="Zdjęcie ukazujące moją twarz"></div>
-                    </div>
-
-                    <div class="about-col-2">
-                        <h1 class="sub-title">O mnie</h1>
-                        <p id="typingeffect">Nazywam się Bartosz Kutnik mam 15 lat i aktualnie chodzę do Technikum Nr 5 Zespołu Szkół Mechanicznych Elektrycznych i Elektronicznych im. prof. Sylwestra Kaliskiego w Toruniu. Aktualnie jestem w drugiej klasie na profilu technik-programista, a moja droga do świata programowania zaczęła się już w 8. klasie podstawówki. To fascynujące dwuletnie doświadczenie wciąż rozwijam, zagłębiając wiedzę kodowania i algorytmów.
-                            Mieszkam w Czernikowie, miasteczka położonego 35km od Torunia. Jako programista, moje zainteresowania obejmują nie tylko pisanie kodu, ale także szeroko pojętą twórczość w świecie gier komputerowych. Nie tylko je programuję, ale również testuję, co pozwala mi lepiej zrozumieć mechanizmy i doskonalić swoje umiejętności. Oprócz tego, moją pasją jest także tworzenie grafik – co sprawia mi to równie dużo radości co programowanie. Jako programista staram się stale poszerzać swoje horyzonty, wnoszące do życia nowe, innowacyjne projekty.</p>
-    
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Umiejętności</p>
-                            <p class="tab-links" onclick="opentab('expiernce')">Doświadczenie</p>
-                            <p class="tab-links" onclick="opentab('education')">Edukacja</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>HTML/CSS</span><br>
-                                        <div class="skill-box">
-                                            <div class="skill-bar">
-                                                <span class="skill-per htmlcss">
-                                                    <span class="tooltip">90%</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                </li>
-                                <li><span>Unity / C#</span><br>
-                                    <div class="skill-box">
-                                        <div class="skill-bar">
-                                            <span class="skill-per unity">
-                                                <span class="tooltip">65%</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><span>SQL</span><br>
-                                    <div class="skill-box">
-                                        <div class="skill-bar">
-                                        <span class="skill-per sql">
-                                            <span class="tooltip">60%</span>
-                                        </span>
-                                    </div>
-                                </li>
-                                <li><span>Python</span><br>
-                                    <div class="skill-box">
-                                        <div class="skill-bar">
-                                            <span class="skill-per python">
-                                                <span class="tooltip">25%</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><span id="js1">JavaScript</span><span id="js2">Js</span>
-                                    <div class="skill-box">
-                                        <div class="skill-bar">
-                                            <span class="skill-per javascript">
-                                                <span class="tooltip">15%</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><span>WPF</span><br>
-                                    <div class="skill-box">
-                                        <div class="skill-bar">
-                                            <span class="skill-per wpf">
-                                                <span class="tooltip">10%</span>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="expiernce">
-                            <ul>
-                                <li><span>Konkurs μElektra</span><br>Otrzymanie wyróżnienia za grę "Rumun The Game"</li>
-                            </ul>
-                            <ul>
-                                <li><span>XVIII Konkurs Informatyczny Bóbr 2023</span><br>Wzięcie udziału</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li>
-                                    <span>Języki obce</span><br>
-                                    <i class="fa-solid fa-earth-americas"></i> Angielski na poziomie A2/B1<br>
-                                    <i class="fa-solid fa-earth-europe"></i> Niemiecki na poziomie komunikatywnym<br>
-                                </li>
-                                <li><span>Certyfikaty</span><br>
-                                    Kurs tworzenia gry 2D RPG <a href="assets/certificates/udemy.pdf"<i class="fa-solid fa-download"></i></a><br>
-                                    Kurs "Introduction to Cybersecurity - CISCO" <a href="assets/certificates/cisco.pdf"<i class="fa-solid fa-download"></i></a><br>
-                                    Kurs z tworzenia grafik - w trakcie<br>
-                                    Kurs z robotów - w trakcie
-                                </li>
-                                <li><span>Aktualnie uczę się:</span><br>
-                                    <i class="fa-brands fa-js"></i>
-                                    <i class="fa-solid fa-c"></i><i class="fa-solid fa-hashtag"></i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!------------skills------------>
-    <div id="skill"> 
-        <div class="container">
-            <h1 class="sub-title">Umiejętności</h1>
-            <div class="wrapper">
-               <div class="swiper">
-                   <!-- Additional required wrapper -->
-                   <div class="swiper-wrapper">
-                       <!-- Slides -->
-                       <div class="swiper-slide">
-                        <div class="content-wrapper">
-                          <div class="content">
-                            <div class="swiper-avatar"><img src="assets/images/skillsimg/web.png"></div>
-                            <p>Tworze strony internetowe, które oparte są na estetyce i funkcjonalności. Formularze, galerie, linki, podstrony i skrypty są precyzyjnie skomponowane, tworząc harmonię i dobre ułożenie na każdym urządzeniu (responsywność). Realizuję zarówno strony one-page jak i multi-page. Każdy detal to starannie dobrany element, tworzący wyjątkowe doświadczenia użytkownika. Kolory strony są dobrane dzięki idealnie dobranym paletom kolorów.</p>
-                          </div>
-                        </div>
-                      </div>
-                       <div class="swiper-slide">
-                           <div class="content-wrapper">
-                               <div class="content">
-                                   <div class="swiper-avatar"><img src="assets/images/skillsimg/img.png"></div>
-                                   <p>Grafiki tworze w programach takich jak Photoshop, Aseprite, Gimp czy Paint.Net. Używam ich najczęsciej do gier np. wygląd postaci czy tekstury mapy, ale także do aplikacji internetowych. Pracuje raczej na grafikach 2D, ale od jakiegoś czasu uczę się także tworzenia modeli 3D w programie Blender. Potrafie także animować te grafiki. Tworze animacje np. ruchu z kilkunastu klatek czyli pojedynczych obrazów.</p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                           <div class="content-wrapper">
-                               <div class="content">
-                                   <div class="swiper-avatar"><img src="assets/images/skillsimg/game.png"></div>
-                                   <p>Aktualnie pracuję na silniku Unity, tworząc gry w C#. Są to przedwszystkim gry 2D, ale mam w planach za niedługo zacząć wejść w świat tworzenia gier 3D. Bardzo dobrze czuję się w środowisku gier platforomych. Tworze do nich samodzielnie grafiki i animacje. Od niedawna dopiero uczę się Unity oraz tworzenia w nim gier, więc są to dopiero amatorskie projekty, które aktualnie używam tylko do nauki i zrozumienia działania silnika itd.</p>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="swiper-slide">
-                        <div class="content-wrapper">
-                            <div class="content">
-                                <div class="swiper-avatar"><img src="assets/images/skillsimg/code.png"></div>
-                                <p>Jestem zdolny w tworzeniu podstawowych, ale funkcjonalnych skryptów JavaScript na stronie internetowej. Potrafię wykorzystywać różne biblioteki, takie jak Swiper, jQuery czy GSAP, aby dynamicznie ulepszać interakcję użytkownika. Moje umiejętności pozwalają na sprawną implementację animacji, przewijania i innych elementów, poprawiając wrażenia odwiedzających stronę.</p>
-                            </div>
-                        </div>
-                    </div>
-                   </div>
-           
-                   <!-- If we need pagination -->
-                   <!-- If we need navigation buttons -->
-                   <div class="swiper-nav-wrapper">
-                       <div class="swiper-button-prev"></div>
-                       <div class="swiper-pagination"></div>
-                       <div class="swiper-button-next"></div>
-                   </div>
-               </div>
-           </div>
-        </div>
-          
+    <div class="scrollTop" onclick="scrollTopTop()">
+        <i class="fa-solid fa-arrow-up"></i>
     </div>
-    <!------------portfoilio------------>
-    <div id="portfolio">
+    <header id="parallaxHeader">
         <div class="container">
-            <h1 class="sub-title">Portfolio</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="assets/images/potfolioimggallery/work-1.png">
-                    <div class="layer">
-                        <h3>Strona dla Hodowli Psów Rasowych</h3>
-                        <p>Jest to praktycznie skończony projekt strony internetowej dla Hodowli rasy Shih-Tzu, dla mojej mamy. Strona jest w pełni responsywna, posiada galerię, kontakt, skrypty itd.</p>
-                        <a href="#hiddenGallery" id="openGalleryButton"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <div id="hiddenGallery" style="display: none;">
-                            <a href="assets/images/gallerygraphics/Littlesection/little1.png"><img src="assets/images/gallerygraphics/Littlesection/little1.png" alt="Menu główne strony"></a>
-                            <a href="assets/images/gallerygraphics/Littlesection/little2.png"><img src="assets/images/gallerygraphics/Littlesection/little2.png" alt="Stopka strony"></a>
-                            <a href="assets/images/gallerygraphics/Littlesection/little3.png"><img src="assets/images/gallerygraphics/Littlesection/little3.png" alt="Jedna z sekcji strony"></a>
-                            <a href="assets/images/gallerygraphics/Littlesection/little4.png"><img src="assets/images/gallerygraphics/Littlesection/little4.png" alt="Responsywność menu głównego"></a>
-                            <a href="assets/images/gallerygraphics/Littlesection/little5.png"><img src="assets/images/gallerygraphics/Littlesection/little5.png" alt="Responsywność sekcji 'O hodowli'"></a>
-                        </div>
+            <nav>
+                <img src="assets/images/" class="logo" alt="Logo ">
+                <ul id="sidemenu">
+                    <li onclick="closemenu()"><a href="#header">Home</a></li>
+                    <li onclick="closemenu()"><a href="#about">About me</a></li>
+                    <li onclick="closemenu()"><a href="#skills">Skills</a></li>
+                    <li onclick="closemenu()"><a href="#portfolio">Portfolio</a></li>
+                    <li onclick="closemenu()"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div class="icon-container">
+                    <i class="fas fa-globe"></i>
+                    <div class="dropdown-content">
+                        <a href="enindex.html"><img src="assets\images\skillsimg\code.png"><b>RESUME</b></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="assets/images/potfolioimggallery/work-2.png">
-                    <div class="layer">
-                        <h3>Grafiki</h3>
-                        <p>Używam głównie programów Photoshop, Aseprite (rysowanie oraz animacje 2d) oraz Paint.net. Grafiki służą mi głównie do gier.</p>
-                        <a href="#hiddenGallery2" id="openGalleryButton2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <div id="hiddenGallery2" style="display: none;">
-                            <a href="assets/images/gallerygraphics/Grafsection/graf1.gif"><img src="assets/images/gallerygraphics/Grafsection/graf1.gif" alt="Zdjęcie 1"></a>
-                            <a href="assets/images/gallerygraphics/Grafsection/graf2.png"><img src="assets/images/gallerygraphics/Grafsection/graf2.png" alt="Zdjęcie 2"></a>
-                            <a href="assets/images/gallerygraphics/Grafsection/graf3.png"><img src="assets/images/gallerygraphics/Grafsection/graf3.png" alt="Zdjęcie 3"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="assets/images/potfolioimggallery/work-3.png">
-                    <div class="layer">
-                        <h3>Gra na przyszły konkurs szkolny μElektra 2023</h3>
-                        <p>Jestem w trakcie tworzenia tej gry na silniku Unity w C#, dlatego pokaże tylko lekkie przecieki, aby najlepsze widoki zostawić na samą  μElektrę.</p>
-                        <a href="#hiddenGallery3" id="openGalleryButton3"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                        <div id="hiddenGallery3" style="display: none;">
-                            <a href="assets/images/gallerygraphics/Konkurssection/konkurs1.png"><img src="assets/images/gallerygraphics/Konkurssection/konkurs1.png" alt="Wstępny wygląd gry"></a>
-                            <a href="assets/images/gallerygraphics/Konkurssection/konkurs2.gif"><img src="assets/images/gallerygraphics/Konkurssection/konkurs2.gif" alt="Beta chodzenia postaci"></a>
-                            <a href="assets/images/gallerygraphics/Konkurssection/konkurs3.gif"><img src="assets/images/gallerygraphics/Konkurssection/konkurs3.gif" alt="Beta ataków podstawowych gracza"></a>
-                        </div>
-                    </div>
-                </div>
+               
+            </nav>
+            <div class="header-text">
+                <div
+                data-aos="fade"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out-back"
+              ><p>FullStack Developer</p>
+              </div>
+                <div data-aos="fade-up" data-aos-duration="1500"><h1>Hi, I'm<br><span>Amit Patle</span></h1></div>
             </div>
-            <a href="https://github.com/unrestt" class="btn" target="_blank">Zobacz więcej</a>
         </div>
-    </div>
-    <!------------contact------------>
-    <div id="contact">
+    </header>
+    <!------------about------------->
+    <div id="about">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Kontakt</h1>
-                    <p><i class="fa-solid fa-envelope"></i>kutnik.contact@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>(+48) 535 779 011</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/bartek.kutnik.77?locale=pl_PL"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/kutni.kk/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/kreciul_"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="https://github.com/unrestt"><i class="fa-brands fa-github"></i></a>
-                    </div>
+                <div class="about-col-1">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-duration="800" data-aos-easing="ease-in-sine"><img class="imgabout" src="assets/images/userimg/user.png" alt="Zdjęcie ukazujące moją twarz"></div>
                 </div>
-                <div class="contact-right">
-                    <form method="post" action="https://script.google.com/macros/s/AKfycbxJMUy-BxaBLOQeknRCvexKIDH0MGtmbrSx-QRyXH0J48MEuyok15HNh52Kf36YCBlT/exec" name="contact-form">
-                        <input type="text" name="Imie" placeholder="Twoje imie" required>
-                        <input type="email" name="Email" placeholder="Twój e-mail" required>
-                        <textarea name="Wiadomosc" rows="6" placeholder="Twoja wiadomość"></textarea>
-                        <button type="submit" value="Submit" id="submit" class="btn btn2">Wyślij</button>
-                    </form>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p id="typingeffect">My name is <u>Amit patle</u>, and I'm a 20-year-old full-stack developer currently in sppu University, in Pune, India. I am in my second year, pursuing a specialization in technician-programmer.<br> My journey into the world of programming began in the 8th grade of primary school, and over these past five years, I have been continuously expanding my knowledge and skills in coding , problem solving and algorithms .<br>
+                    In addition to programming, I am passionate about creating graphics, which brings me as much joy as coding. As a full-stack developer, I am dedicated to constantly expanding my horizons and bringing innovative projects to life, always striving to push the boundaries of what is possible in the digital world. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expiernce')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS</span><br>
+                                    <div class="skill-box">
+                                        <div class="skill-bar">
+                                            <span class="skill-per htmlcss">
+                                                <span class="tooltip">90%</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li><span>Python</span><br>
+                                <div class="skill-box">
+                                    <div class="skill-bar">
+                                        <span class="skill-per unity">
+                                            <span class="tooltip">65%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>SQL</span><br>
+                                <div class="skill-box">
+                                    <div class="skill-bar">
+                                    <span class="skill-per sql">
+                                        <span class="tooltip">60%</span>
+                                    </span>
+                                </div>
+                            </li>
+                            <li><span>C++ / C#</span><br>
+                                <div class="skill-box">
+                                    <div class="skill-bar">
+                                        <span class="skill-per python">
+                                            <span class="tooltip">45%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span id="js1">JavaScript</span><span id="js2">React / Go</span>
+                                <div class="skill-box">
+                                    <div class="skill-bar">
+                                        <span class="skill-per javascript">
+                                            <span class="tooltip">15%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><span>Java</span><br>
+                                <div class="skill-box">
+                                    <div class="skill-bar">
+                                        <span class="skill-per wpf">
+                                            <span class="tooltip">10%</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expiernce">
+                        <ul>
+                            <li><span>Hackathon 2024</span><br>Taking part</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>  High School </span><br>
+                                <i class="fa-solid fa-earth-europe"></i> Army Public school<br>
+                            </li>
+                            <li>
+                                <span>  Undergraduate </span><br>
+                                <i class="fa-solid fa-earth-europe"></i>  Savitribai Phule Pune University
+                                (BTech)<br>
+                            </li>
+                            <li><span>Certificates</span><br>
+                                Course <a href="assets/certificates/udemy.pdf"<i class="fa-solid fa-download"></i></a><br>
+                                
+                            </li>
+                            <li><span>I'm currently learning: </span><br>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-solid fa-c"></i><i class="fa-solid fa-hashtag"></i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy; Bartosz Kutnik, Wszelkie prawa zastrzeżone 2024</p>
-        </div>
-        
     </div>
+<!------------serives------------>
+<div id="skill">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="wrapper">
+           <div class="swiper">
+               <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                    <div class="content-wrapper">
+                      <div class="content">
+                        <div class="swiper-avatar"><img src="assets/images/skillsimg/web.png"></div>
+                        <p>I create websites that are based on aesthetics and functionality. Forms, galleries, links, subpages, and scripts are precisely composed, creating harmony and good layout on every device (responsiveness). I work on both one-page and multi-page websites. Every detail is a carefully chosen element, creating unique user experiences. The colors of the website are selected thanks to perfectly matched color palettes.</p>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="swiper-slide">
+                       <div class="content-wrapper">
+                           <div class="content">
+                               <div class="swiper-avatar"><img src="assets/images/skillsimg/img.png"></div>
+                               <p>I create graphics in programs such as Photoshop, Aseprite, Gimp, or Paint.Net. I mostly use them for games, such as character appearance or map textures, but also for web applications. I mostly work on 2D graphics, but lately, Ive been learning to create 3D models in Blender. I can also animate these graphics, creating animations like movement with several frames or individual images.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="swiper-slide">
+                       <div class="content-wrapper">
+                           <div class="content">
+                               <div class="swiper-avatar"><img src="assets/images/skillsimg/game.png"></div>
+                               <p>Currently, I work on the Unity engine, creating games in C#. These are primarily 2D games, but I plan to soon delve into the world of 3D game development. I feel very comfortable in the environment of platformer games. I create graphics and animations for them independently. Ive only recently started learning Unity and game development in it, so these are amateur projects that I currently use for learning and understanding the engine, etc.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="swiper-slide">
+                    <div class="content-wrapper">
+                        <div class="content">
+                            <div class="swiper-avatar"><img src="assets/images/skillsimg/code.png"></div>
+                            <p>I am adept at crafting basic yet functional JavaScript scripts for websites. I can leverage various libraries such as Swiper, jQuery, and GSAP to dynamically enhance user interaction. My skills enable me to smoothly implement animations, scrolling effects, and other elements, enhancing the overall user experience for website visitors.</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div class="swiper-nav-wrapper">
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-pagination"></div>
+                   <div class="swiper-button-next"></div>
+               </div>
+           </div>
+       </div>
+    </div>
+</div>
+<!------------portfoilio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/images/potfolioimggallery/work-1.png">
+                <div class="layer">
+                    <h3>Website for Purebred Dog Breeding</h3>
+                    <p>This is a practically finished web project for a Shih-Tzu dog breeding, for my mom. The website is fully responsive, featuring a gallery, contact information, scripts, etc. </p>
+                    <a href="#hiddenGallery" id="openGalleryButton"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div id="hiddenGallery" style="display: none;">
+                        <a href="assets/images/gallerygraphics/Littlesection/little1.png"><img src="assets/images/gallerygraphics/Littlesection/little1.png" alt="Webiste Main Menu"></a>
+                        <a href="assets/images/gallerygraphics/Littlesection/little2.png"><img src="assets/images/gallerygraphics/Littlesection/little2.png" alt="Website Footer"></a>
+                        <a href="assets/images/gallerygraphics/Littlesection/little3.png"><img src="assets/images/gallerygraphics/Littlesection/little3.png" alt="One of the sections on the website"></a>
+                        <a href="assets/images/gallerygraphics/Littlesection/little4.png"><img src="assets/images/gallerygraphics/Littlesection/little4.png" alt="Website Main Menu responsiveness"></a>
+                        <a href="assets/images/gallerygraphics/Littlesection/little5.png"><img src="assets/images/gallerygraphics/Littlesection/little5.png" alt="Section O hodowli responsiveness"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/images/potfolioimggallery/work-2.png">
+                <div class="layer">
+                    <h3>Graphics</h3>
+                    <p>I mainly use Photoshop, Aseprite (for drawing and 2D animations), and Paint.net. The graphics I create are primarily for games</p>
+                    <a href="#hiddenGallery2" id="openGalleryButton2"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div id="hiddenGallery2" style="display: none;">
+                        <a href="assets/images/gallerygraphics/Grafsection/graf1.gif"><img src="assets/images/gallerygraphics/Grafsection/graf1.gif" alt="he finished character design and single running animation"></a>
+                        <a href="assets/images/gallerygraphics/Grafsection/graf2.png"><img src="assets/images/gallerygraphics/Grafsection/graf2.png" alt="Aseprite program, in which I create 2D graphics and animations"></a>
+                        <a href="assets/images/gallerygraphics/Grafsection/graf3.png"><img src="assets/images/gallerygraphics/Grafsection/graf3.png" alt="background for the game menu Rumun The Game (μElektra2022)"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/images/potfolioimggallery/work-3.png">
+                <div class="layer">
+                    <h3>A game for the future μElektra 2023 school competition</h3>
+                    <p>I'm currently in the process of creating this game using the Unity engine with C#. Therefore, I'll only show light teasers to save the best views for μElektra itself.</p>
+                    <a href="#hiddenGallery3" id="openGalleryButton3"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <div id="hiddenGallery3" style="display: none;">
+                        <a href="assets/images/gallerygraphics/Konkurssection/konkurs1.png"><img src="assets/images/gallerygraphics/Konkurssection/konkurs1.png" alt="Initial look of the game"></a>
+                        <a href="assets/images/gallerygraphics/Konkurssection/konkurs2.gif"><img src="assets/images/gallerygraphics/Konkurssection/konkurs2.gif" alt="Character walking beta"></a>
+                        <a href="assets/images/gallerygraphics/Konkurssection/konkurs3.gif"><img src="assets/images/gallerygraphics/Konkurssection/konkurs3.gif" alt="Player Basic Attacks Beta"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/amitpatle" class="btn" target="_blank">See more</a>
+    </div>
+</div>
+<!------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p><i class="fa-solid fa-envelope"></i> amitpatle@pm.me</p>
+                <p><i class="fa-solid fa-phone"></i> +9192345XXXX</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/amitpatle_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/amitpatle_"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/amitpatle"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form method="post" action="https://script.google.com/macros/s/AKfycbxJMUy-BxaBLOQeknRCvexKIDH0MGtmbrSx-QRyXH0J48MEuyok15HNh52Kf36YCBlT/exec" name="contact-form">
+                    <input type="text" name="Imie" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your e-mail" required>
+                    <textarea name="Wiadomosc" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" value="Submit" id="submit" class="btn btn2">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Amit patle, All rights reserved 2024</p>
+    </div>
+    
+</div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js"></script>
@@ -305,7 +295,7 @@
     <script src="https://kit.fontawesome.com/70f2470b08.js" crossorigin="anonymous"></script>
     <script src="assets/js/Google Sheet.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/gallery.js"></script>
+    <script src="assets/js/galleryen.js"></script>
     <script src="assets/js/services-list.js"></script>
     <script src="assets/js/sidemenu.js"></script>
     <script src="assets/js/tablinks.js"></script>
