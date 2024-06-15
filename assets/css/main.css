@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #010201;
+    color: #fff;
+}
+/* ------------------scrolbar----------------------- */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0a0909;
+    border-radius: 15px;
+    border: 3px solid #FFF; /* Dodajemy biały obramowanie */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #010201cc; /* Dodajemy transparentność na hover */
+}
+/* ------------------other----------------------- */
+.container{
+    padding: 10px 10%;
+}

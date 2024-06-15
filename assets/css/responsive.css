@@ -1,0 +1,123 @@
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    .imgabout{
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-text{
+        margin-top: 300px;
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        padding-right: 40px;
+    }
+    nav ul{
+        background: #faf8f9;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px; 
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width: 700px){
+    header{
+        background-image: url('../images/background/phone-background.png');
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: repeat;
+        overflow: visible;
+        position: static;
+    }
+    .header-text{
+        margin-top: 300px;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 1630px){
+    .skill-per.javascript{
+        width: 20%;
+    }
+    .skill-per.wpf{
+        width: 15%;
+    }
+    .skill-per.python{
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .skill-per.javascript{
+        width: 25%;
+    }
+    .skill-per.wpf{
+        width: 20%;
+    }
+    .skill-per.python{
+        width: 35%;
+    }
+    span#js2{
+        display: block;
+    } 
+    span#js1{
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 1390px){
+    span#js2{
+        display: block;
+    }
+    span#js1{
+        display: none;
+    }
+}
