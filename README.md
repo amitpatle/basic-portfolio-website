@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# portfolio
-=======
+
 
 # My Personal Portfolio ⚠️ Under Construction⚠️
 
@@ -88,5 +86,4 @@ Feel free to get in touch with me via the following platforms:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
->>>>>>> 168394f1282e278f21bac3a2c5e7e6e4bd141f2b
+
