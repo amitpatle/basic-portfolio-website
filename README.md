@@ -1,7 +1,6 @@
 
 
-# My Personal Portfolio ⚠️ Under Construction⚠️
-
+# My Personal Portfolio 
 Welcome to my personal portfolio website. This website showcases my projects, skills, and professional background.
 
 ## Table of Contents
